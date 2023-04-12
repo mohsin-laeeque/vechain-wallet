@@ -1,6 +1,6 @@
 {
-  "name": "quasar-browser-extension",
-  "description": "A Quasar web extension",
+  "name": "motopad wallet",
+  "description": "A motopad browser based walled extension",
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
