@@ -24,7 +24,7 @@
             <slot />
         </div>
         <!-- drawer content footer -->
-        <q-list padding>
+        <q-list padding class="pnel">
             <q-item :to="{name: 'settings'}">
                 <q-item-section avatar>
                     <q-icon
