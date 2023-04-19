@@ -1,10 +1,15 @@
 // app global css in Sass form
 
+@import url("https://use.typekit.net/dvt0akl.css")
+
 .monospace
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace
+  font-family: "finalsix", sans-serif
 
 .serif
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif
+  font-family: "finalsix", sans-serif
+
+body 
+  font-family: "finalsix"
 
 body.q-ios-padding 
   .safe-area,
@@ -37,17 +42,243 @@ body
   -ms-user-select: none !important
   user-select: none !important
 
+// Scroll Bar Styles 
+* 
+  scrollbar-width: thin
+  scrollbar-color: #f64b1c #ccc
+
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+
+::-webkit-scrollbar-track
+  background: #0f1222bd
+
+::-webkit-scrollbar-thumb
+  background: #041134
+
+
 .w40
   width: 40%
 
+.tiny
+  font-size: 13px
+
+.bg-pur
+  background: #4f65b4
+
 .narrow-page
   width: 100%
-  max-width: map-get($sizes, "sm")
+  width: 440px;
+  max-width: 100%;
+  // max-width: map-get($sizes, "sm")
+
+input[type="text"], .q-field__native, textarea
+  background-color : transparent !important
+  background : transparent !important
 
 // the workaround for the q-popup-proxy bug: can't set menu's max-width
 .q-menu
   max-width: 80% !important
+  border-radius: 20px
   box-shadow: 0 5px 12px 0px rgba(0,0,0,0.25)
+
+// buttons
+.grpBtn.narrow-page , .q-card
+  button
+    padding: 0px
+    max-width: 219px
+    min-height: 66px
+.grpBtn.narrow-page , .q-card
+  button:before
+    min-height: 66px;
+
+.q-field__native
+  color: #fff
+
+input:-internal-autofill-selected 
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: transparent !important
+    color: fieldtext !important;
 
 img
   pointer-events: none
+
+.custom-container
+  padding: 100px 200px
+
+.grey_badge
+  border-left: 5px solid rgba(227,232,237,1.00)
+  background-color: #1b1f230d
+  border-radius: 5px
+  margin-bottom: 5px
+
+.comp
+  background-color: aliceblue
+
+.flexInp
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 10px
+  width: 450px
+  input
+    width: $w
+    height: 50px
+    transition:all 0.5s ease-out
+  .inpBtn
+    height: 50px
+    width: 40%
+.tabStyle
+  .q-field__label
+    color: #fff
+
+  .q-field__control
+    padding: 15px
+    background: #041134 0% 0% no-repeat padding-box
+    box-shadow: 0px 6px 6px #00000029
+    border: 1px solid #1B2D5E
+    border-radius: 10px
+    height: fit-content
+
+  .q-field--labeled .q-field__native, .q-field__control:before, .q-field__control, .q-field__native , .q-icon
+    color: #fff
+
+  .q-field--outlined .q-field__control:after , .q-field--outlined .q-field__control:before
+    border: 0px
+
+//activityTab
+
+.activityTab
+  .activityLabel.q-item__label
+    font-weight: bold
+    margin-bottom: 10px
+    
+  .q-focus-helper
+    color: $currentColor
+
+  .q-link
+    box-shadow: 0 0 10px #191b1d38
+    margin: 10px 0px
+    padding: 15px
+    border-radius: 15px
+
+// modules
+.q-card
+  background: url('../assets/sidebar.png') no-repeat center center fixed
+  background-color: #02021A
+  border-radius: 20px !important
+  border: 2px solid #2d334e
+  box-shadow: 0 0 10px #2b56f5 !important
+  // box-shadow: 0 2px 4px -1px #2b56f5, 0 4px 5px #2b56f5, 0 1px 10px #2b56f5 !important
+  color: #fff
+
+  textarea, .q-field__label
+    color: #fff
+  
+  .q-toolbar
+    button
+      min-height: auto;
+      margin-bottom: 10px
+
+  .q-field--outlined .q-field__control:before 
+    border: 1px solid #2b3553
+  
+  button
+    margin-bottom: 40px
+.address-assets
+  .q-link
+      background-color: #041134
+      border: 1px solid #2d334e
+      border-radius: 12px;
+      color: #fff
+
+  .q-expansion-item--expanded
+    .q-link
+      border-radius: 12px 12px 0px 0px
+
+  span
+    color: #fff
+
+  .q-expansion-item__content
+    background: #5da7da;
+    border-radius: 0px 0px 10px 10px
+
+.address-assets.q-list >
+  div
+    margin-bottom: 10px
+
+.assetsList.q-list >
+  div
+    background-color: #041134
+    border: 1px solid #2d334e
+    border-radius: 12px
+    color: #fff
+    margin-bottom: 10px
+
+.assetsList.q-list 
+    
+  span
+    color: #fff
+
+  .q-item__label--caption
+    color: #a1a1a3
+
+  .q-expansion-item__content
+    background: #5da7da;
+    border-radius: 12px;
+.settingsList
+  .q-link > 
+    div
+      transition: 0.2s all linear
+
+.settingsList
+  .q-link
+      border: 1px solid transparent
+      color:  #041134
+      transition: color 0.2s linear;
+      border-radius: 10px
+      position: relative;
+      
+      .q-icon
+        color:  #041134
+
+  .q-link:before
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px
+    background-color: #041134
+    opacity: 0;
+    transition: 0.4s all linear;
+    z-index: -1;
+
+  .q-link:hover:before, .q-link:focus:before 
+    width: 100%;
+    transition: 0.4s all linear;
+    opacity: 1;
+
+  .q-link:hover , .q-link:hover .q-icon
+    outline: none;
+    transition: 0.4s all linear;
+    color: #fff;
+
+// Assets History
+
+.wrapAssetsHis
+    box-shadow: 0 0 10px #191b1d38;
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 15px;
+
+
+$layout-breakpoint-small: 1399px
+
+@media (max-width: $desktop)
+  .grpBtn.narrow-page button, .q-card button
+    max-width: 170px;
+    min-height: 50px;

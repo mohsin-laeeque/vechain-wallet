@@ -27,7 +27,7 @@
                 </q-item>
             </page-content>
             <page-content class="col">
-                <q-list>
+                <q-list class="address-assets">
                     <async-resolve
                         v-for="(token, index) in tokenList"
                         tag="div"

@@ -1,6 +1,6 @@
 <template>
     <div class="q-pa-sm q-pb-md">
-        <div class="bar narrow-page q-mx-auto row justify-around">
+        <div class="bar narrow-page grpBtn q-mx-auto row justify-around">
             <slot />
         </div>
     </div>

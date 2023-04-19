@@ -16,7 +16,7 @@
         /> -->
         <!-- content wrapper-->
         <aside
-            class="drawer fixed-left q-drawer__content"
+            class="drawer my-aside fixed-left q-drawer__content"
             :class="{invisible: invisible, 'drawer-disable-pointer-events': panning||transiting}"
             v-touch-pan.left.mouse.prevent="transiting? undefined:handleTouchPan"
         >
@@ -174,11 +174,25 @@ export default Vue.extend({
     width: 20px;
 }
 .drawer {
-    transform: translateX(-100%);
+    background: url('../assets/sidebar.png') no-repeat center center fixed;
+    /* background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.5),
+    #02021A
+  ), url("../assets/sidebar.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top;
+    position: fixed;
+    left: 0;
+    transform: translateX(0px);
+    /* background-color: #02021A; */
+    color: #fff;
 }
 .drawer-parent {
     transform: translateX(
-        calc(var(--drawer-width) * var(--drawer-open-ratio) * 1px)
+        calc( var(--drawer-open-ratio) * 0px)
     );
 }
 .drawer-transition {
@@ -190,5 +204,12 @@ export default Vue.extend({
 .drawer-disable-pointer-events,
 .drawer-disable-pointer-events * {
     pointer-events: none !important;
+}
+.drawer .q-link {
+    color: #fff;
+    text-transform: capitalize;
+}
+.drawer .q-link:hover, .drawer .q-item.q-router-link--active, .drawer .q-item--active {
+    color: #0047ab;
 }
 </style>

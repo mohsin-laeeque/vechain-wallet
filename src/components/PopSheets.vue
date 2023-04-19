@@ -6,7 +6,7 @@
         v-model="opened"
     >
         <q-card>
-            <q-list
+            <q-list class="AAAAAAAA"
                 padding
                 :separator="separator"
             >
