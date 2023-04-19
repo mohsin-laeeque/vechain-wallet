@@ -6,8 +6,8 @@
         transition-show="slide-up"
         transition-hide="slide-down"
     >
-        <q-card class="column no-wrap">
-            <page-toolbar
+        <q-card class="column no-wrap bg-grey-3">
+            <page-toolbar class="text-black"
                 :title="$t('common.transaction')"
                 icon="close"
                 :gid="gid"
@@ -27,7 +27,7 @@
                 />
             </page-content>
             <page-content size="xs">
-                <error-tip
+                <error-tip class="q-card"
                     v-if="criticalError"
                     :error="criticalError"
                 />
