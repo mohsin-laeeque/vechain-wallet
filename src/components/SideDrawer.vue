@@ -174,13 +174,9 @@ export default Vue.extend({
     width: 20px;
 }
 .drawer {
-    background: url('../assets/sidebar.png') no-repeat center center fixed;
-    /* background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 255, 0.5),
-    #02021A
-  ), url("../assets/sidebar.png"); */
-    background-size: cover;
+    background: url('../assets/sidebar.png') no-repeat fixed;
+    background-size: 100% 50%;
+    background-color: #02021a;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: top;

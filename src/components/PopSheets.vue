@@ -6,7 +6,7 @@
         v-model="opened"
     >
         <q-card>
-            <q-list class="AAAAAAAA"
+            <q-list class="theme-dropdown"
                 padding
                 :separator="separator"
             >

@@ -13,6 +13,7 @@
     "install": "electron-rebuild"
   },
   "dependencies": {
+    "@lottiefiles/vue-lottie-player": "^1.1.0",
     "chalk": "^5.2.0",
     "electron-context-menu": "^2.5.0",
     "electron-updater": "^4.3.8",

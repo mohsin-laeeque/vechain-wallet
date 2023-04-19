@@ -114,6 +114,18 @@ img
   border-radius: 5px
   margin-bottom: 5px
 
+.animLogo 
+  animation: animName 2s linear infinite
+
+@keyframes animName 
+ 0%
+    transform: rotate(0deg);
+   
+100%
+    transform: rotate(360deg);
+   
+
+
 .comp
   background-color: aliceblue
 
@@ -166,12 +178,25 @@ img
 
 // modules
 .q-card
+  background-color: #02021a
+  color: #fff
+  
+  .q-toolbar
+    button
+      min-height: auto;
+      margin-bottom: 10px
+
+  .q-field--outlined .q-field__control:before 
+    border: 1px solid #2b3553
+
+.full-width.q-card
   background: url('../assets/sidebar.png') no-repeat center center fixed
   background-color: #02021A
   border-radius: 20px !important
   border: 2px solid #2d334e
   box-shadow: 0 0 10px #2b56f5 !important
-  // box-shadow: 0 2px 4px -1px #2b56f5, 0 4px 5px #2b56f5, 0 1px 10px #2b56f5 !important
+  background-size: 100% 100%
+  background-color: #02021a
   color: #fff
 
   textarea, .q-field__label
@@ -274,6 +299,16 @@ img
     margin: 10px 0px;
     padding: 15px;
     border-radius: 15px;
+
+
+
+
+
+
+
+
+
+
 
 
 $layout-breakpoint-small: 1399px
