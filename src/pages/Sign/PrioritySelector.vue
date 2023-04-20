@@ -1,5 +1,5 @@
 <template>
-    <q-btn
+    <q-btn class="regBtn"
         :loading="!calcFee"
         size="sm"
         color="primary"

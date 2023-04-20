@@ -1,5 +1,5 @@
 <template>
-    <div class="inline-block monospace address">
+    <div class="inline-block monospace address text-back walletAdd">
         <template v-if="test(addr)">
             {{displayString}}
         </template>

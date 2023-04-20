@@ -32,7 +32,7 @@ export default Vue.extend({
     },
     methods: {
         getClass(i: number) {
-            return i + 1 === this.history.length ? 'text-dark' : 'text-grey'
+            return i + 1 === this.history.length ? 'text-primary' : 'text-white'
         }
     }
 })

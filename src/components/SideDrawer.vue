@@ -175,7 +175,7 @@ export default Vue.extend({
 }
 .drawer {
     background: url('../assets/sidebar.png') no-repeat fixed;
-    background-size: 100% 50%;
+    background-size: 200% 100%;
     background-color: #02021a;
     background-repeat: no-repeat;
     background-origin: border-box;

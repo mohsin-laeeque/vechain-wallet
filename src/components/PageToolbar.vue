@@ -1,5 +1,5 @@
 <template>
-    <q-toolbar class="q-px-xs">
+    <q-toolbar class="q-px-xs header">
         <q-btn
             flat
             round
