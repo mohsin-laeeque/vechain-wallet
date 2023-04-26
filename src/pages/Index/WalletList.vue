@@ -42,7 +42,6 @@
                     </q-item-label>
                 </q-item-section>
             </q-item>
-            <q-item :to="{name:'dummy'}">New Dummy Page</q-item>
         </q-list>
     </div>
 </template>
