@@ -19,16 +19,18 @@
                     />
                     <q-item-label class="boxx"
                         header
+                        v-if="gi > 0"
                         :key="`h-${gi}`"
                     >{{$netDisplayName(group.list[0].genesis.id)}}</q-item-label>
                     <template v-for="(node, i) in group.list">
-                        <q-separa.toLocaleUpperCase()
+                        <q-separator
                             v-if="i > 0"
                             :key="`s-${gi}-${i}`"
                             spaced
                             inset="item"
                         />
                         <q-item  class="nodeList"
+                            v-if="i > 0"
                             :key="`i-${gi}-${i}`"
                             clickable
                             @click="onSelect(node)"
