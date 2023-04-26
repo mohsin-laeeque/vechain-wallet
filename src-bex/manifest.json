@@ -30,10 +30,13 @@
     ]
   }],
   "permissions": [
-    "<all_urls>",
     "storage",
-    "tabs",
-    "activeTab"
+    "unlimitedStorage",
+    "clipboardWrite",
+    "activeTab",
+    "webRequest",
+    "notifications",
+    "webRequestBlocking"
   ],
   "web_accessible_resources": [
     "www/*",
@@ -41,5 +44,5 @@
     "css/*",
     "<all_urls>"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+  "content_security_policy": "frame-ancestors 'none'; script-src 'self' 'unsafe-eval'; object-src 'self';"
 }
