@@ -10,15 +10,16 @@
             />
         </page-toolbar>
         <page-content class="col">
-            <q-list padding>
+            <q-list padding class="nodesPage">
                 <template v-for="(group, gi) in groups">
                     <q-separator
                         v-if="gi > 0"
                         :key="`s-${gi}`"
                         spaced
                     />
-                    <q-item-label
+                    <q-item-label class="boxx"
                         header
+                        v-if="gi > 0"
                         :key="`h-${gi}`"
                     >{{$netDisplayName(group.list[0].genesis.id)}}</q-item-label>
                     <template v-for="(node, i) in group.list">
@@ -28,12 +29,13 @@
                             spaced
                             inset="item"
                         />
-                        <q-item
+                        <q-item  class="nodeList"
+                            v-if="i > 0"
                             :key="`i-${gi}-${i}`"
                             clickable
                             @click="onSelect(node)"
                         >
-                            <q-item-section avatar>
+                            <q-item-section avatar >
                                 <q-icon
                                     color="primary"
                                     name="done"

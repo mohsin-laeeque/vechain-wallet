@@ -1,5 +1,5 @@
 <template>
-    <q-item>
+    <q-item class="estFee">
         <q-item-section avatar>
             <q-item-label caption>{{$t('sign.label_estimate_fee')}}</q-item-label>
         </q-item-section>

@@ -1,7 +1,7 @@
 <template>
     <q-carousel
         v-model="slide"
-        class="safe-area"
+        class="safe-area homeBg"
         transition-prev="slide-down"
         transition-next="slide-up"
         animated
@@ -16,21 +16,20 @@
                 innerClass="fit column"
             >
                 <div class="row">
-                    <h4 class="q-ma-none">{{$t('wizard.title_welcome')}}</h4>
+                    <!-- <h4 class="q-ma-none divCenter">{{$t('wizard.title_welcome')}}</h4> -->
                     <language-list-popup
                         class="q-ml-auto"
                         v-slot="{displayName}"
                     >
-                        <q-btn
+                        <q-btn class="langBtn"
                             flat
                             icon="language"
                             size="sm"
-                            color="primary"
                             :label="displayName"
                         />
                     </language-list-popup>
                 </div>
-                <feature-slides class="col q-mt-md" />
+                <feature-slides class="col q-mt-md homeLogo" />
             </page-content>
             <page-action>
                 <q-btn
@@ -50,7 +49,7 @@
                 padding
                 innerClass="fit column q-gutter-y-md no-wrap"
             >
-                <h4 class="q-mb-none">{{$t('wizard.title_init')}}</h4>
+                <h4 class="q-mb-none mainTitle">{{$t('wizard.title_init')}}</h4>
                 <Progress
                     :current="progressStr"
                     class="col overflow-auto"

@@ -9,7 +9,7 @@
             <q-card-section class="overflow-auto col">
                 {{terms.msg()}}
             </q-card-section>
-            <q-card-section>
+            <q-card-section class="modalCheckbox">
                 <q-checkbox
                     dense
                     v-model="accepted"

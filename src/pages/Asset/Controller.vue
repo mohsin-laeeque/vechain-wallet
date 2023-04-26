@@ -8,7 +8,7 @@
             :gid="wallet.gid"
         />
         <page-content>
-            <async-resolve
+            <async-resolve class="wrapAssetsHis"
                 v-if="token"
                 :promise="$svc.bc(token.gid).balanceOf(address, token)"
                 v-slot={data}
@@ -17,7 +17,7 @@
                     :token="token"
                     :balance="data"
                 >
-                    <q-item-label class="row">
+                    <q-item-label class="row ">
                         {{token.symbol}}
                         <amount-label class="q-ml-auto" :value="data" :decimals="token.decimals" > --.-- </amount-label>
                     </q-item-label>
@@ -31,7 +31,7 @@
                     </q-item-label>
                 </head-item>
             </async-resolve>
-            <q-item dense>
+            <q-item dense class="unique1">
                 <q-item-section>
                     <q-item-label header>
                         {{$t('asset.label_history')}}

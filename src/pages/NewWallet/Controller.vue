@@ -27,10 +27,11 @@
                 no-error-icon
             />
             <div class="col column no-wrap flex-center">
-                <img
+                <!-- <img class="image_rotate"
                     src="~assets/vechain-logo-tint.svg"
                     style="min-height:0px;max-height:300px;max-width:100%"
-                >
+                > -->
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ikaawl5v.json" background="transparent"  speed="1"  style="width: 100%; height: 300px;" loop autoplay></lottie-player>
             </div>
             <div
                 v-if="isSupport"
@@ -80,6 +81,8 @@ import PageAction from 'components/PageAction.vue'
 import { Account } from '@vechain/hw-app-vet'
 import * as Ledger from 'src/utils/ledger'
 import SvgLedger from 'components/SvgLedger.vue'
+import LottieVuePlayer from '@lottiefiles/vue-lottie-player'
+Vue.use(LottieVuePlayer)
 
 const defaultGid = genesises.main.id
 
@@ -239,3 +242,17 @@ export default Vue.extend({
     }
 })
 </script>
+<style scoped>
+.image_rotate {
+    animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+</style>

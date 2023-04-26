@@ -5,8 +5,8 @@
         position="bottom"
         v-model="opened"
     >
-        <q-card>
-            <q-list
+        <q-card class="mainMenu">
+            <q-list class="theme-dropdown"
                 padding
                 :separator="separator"
             >
@@ -26,7 +26,7 @@
                         <q-item-section>
                             <q-item-label
                                 :lines="1"
-                                class="q-px-lg text-center"
+                                class="q-px-lg"
                                 :class="sheet.classes"
                                 :header="sheet.header"
                             >

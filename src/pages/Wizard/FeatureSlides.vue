@@ -1,5 +1,5 @@
 <template>
-    <q-carousel
+    <q-carousel class="homeLogo"
         v-model="slide"
         swipeable
         animated
@@ -17,7 +17,7 @@
         >
             <img
                 class="q-my-auto"
-                style="max-height:200px;min-height:32px;max-width:100%"
+                style="max-height:250px;min-height:32px;"
                 draggable="false"
                 :src="item.img"
             />
@@ -38,7 +38,7 @@ export default Vue.extend({
     computed: {
         slides() {
             return [{
-                img: require('assets/sync-logo.svg'),
+                img: require('assets/logo.png'),
                 title: this.$t('wizard.title_feature_1'),
                 name: 's1',
                 content: this.$t('wizard.msg_feature_1').toString()

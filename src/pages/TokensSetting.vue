@@ -2,7 +2,7 @@
     <div class="column fit">
         <page-toolbar :title="$t('settings.action_token_list')" />
         <page-content class="col">
-            <q-list
+            <q-list class="assetsList"
                 v-if="tokens.length>0"
                 padding
             >

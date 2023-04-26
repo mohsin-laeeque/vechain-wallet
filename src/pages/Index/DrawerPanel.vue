@@ -6,7 +6,7 @@
         <!-- drawer content header -->
         <q-toolbar>
             <q-avatar square>
-                <img src="~assets/sync-logo.svg">
+                <img src="../../assets/favicon.png">
             </q-avatar>
             <q-toolbar-title>
                 Sync2
@@ -24,7 +24,7 @@
             <slot />
         </div>
         <!-- drawer content footer -->
-        <q-list padding>
+        <q-list padding class="panel">
             <q-item :to="{name: 'settings'}">
                 <q-item-section avatar>
                     <q-icon

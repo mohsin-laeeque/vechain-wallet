@@ -48,7 +48,7 @@
                             <q-tab name="utf-8" label="UTF-8" />
                         </q-tabs>
                         <q-tab-panels animated v-model="dataPanel">
-                            <q-tab-panel name="data">
+                            <q-tab-panel name="data" class="dataPanel">
                                 <q-input
                                     square
                                     v-if="clause.data && clause.data.length > 2"
@@ -64,17 +64,17 @@
                             </q-tab-panel>
                             <q-tab-panel name="decoded">
                                 <div v-if="decodedObject"
-                                    class="monospace q-pa-sm tab-content" >
+                                    class="monospace q-pa-sm tab-content text-black" >
                                     <strong>function {{decodedObject.name}}({{ decodedObject.params.map(i => i.name + ': ' +i.type).join(', ') }})</strong>
                                     <div class="q-pt-xs" v-for="p in decodedObject.params" :key="p.name + p.value">
                                         <span class="text-grey-7">{{p.name}}: </span>
-                                        <span>{{p.value}}</span>
+                                        <span class="text-black">{{p.value}}</span>
                                     </div>
                                 </div>
                                 <template v-else>Unable to decode data</template>
                             </q-tab-panel>
                             <q-tab-panel name="utf-8">
-                                <div class="monospace q-pa-sm tab-content"
+                                <div class="monospace q-pa-sm tab-content text-black"
                                     v-if="decodedString">{{decodedString}}</div>
                                 <template v-else>N/A</template>
                             </q-tab-panel>

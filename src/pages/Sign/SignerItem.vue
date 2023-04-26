@@ -1,5 +1,5 @@
 <template>
-    <q-item
+    <q-item class="myWallet"
         v-bind="$attrs"
         v-on="$listeners"
     >

@@ -1,4 +1,4 @@
-import { RouteConfig } from 'vue-router'
+import { RouteConfig } from 'vue-router' 
 import Main from 'layouts/Main'
 import Index from 'pages/Index'
 import Address from 'pages/Address'
@@ -12,7 +12,7 @@ import NodesSetting from 'pages/NodesSetting'
 import Sign from 'pages/Sign'
 import SignSuccess from 'pages/SignSuccess.vue'
 import Activities from 'pages/Activities'
-
+import dummy from 'src/pages/Dummy'
 const routes: RouteConfig[] = [
     {
         path: '/',
@@ -66,6 +66,10 @@ const routes: RouteConfig[] = [
             path: 'activities',
             name: 'activities',
             component: Activities
+        }, {
+            path: 'dummy',
+            name: 'dummy',
+            component: dummy
         }]
     }
 ]

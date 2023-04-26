@@ -22,7 +22,7 @@
                 </q-btn>
             </page-toolbar>
             <!-- tips -->
-            <div class="narrow-page q-mx-auto">
+            <div class="narrow-page q-mx-auto bannerMt">
                 <upgrade-tip v-if="$state.app.updateAvailable" />
                 <backup-tip
                     v-for="w in wallets"
@@ -46,7 +46,7 @@
                 <q-btn
                     unelevated
                     color="primary"
-                    class="w40"
+                    class="w40 themeBtn"
                     :label="$t('index.action_create')"
                     :to="{name: 'new-wallet'}"
                 />

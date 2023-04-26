@@ -1,5 +1,5 @@
 <template>
-    <q-toolbar class="q-px-xs">
+    <q-toolbar class="q-px-xs header">
         <q-btn
             flat
             round
@@ -9,7 +9,7 @@
         <q-toolbar-title class="text-center">
             <div
                 ref="title"
-                class="ellipsis"
+                class="ellipsis tra text-white"
                 :style="titleStyle"
             >{{title}}
             </div>
@@ -20,7 +20,7 @@
             <q-badge
                 v-if="warn"
                 color="negative"
-                class="absolute-top-right no-pointer-events text-bold"
+                class="absolute-top-right no-pointer-events text-bold test"
             >
                 {{warn}}
             </q-badge>
