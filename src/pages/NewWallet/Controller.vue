@@ -81,9 +81,8 @@ import PageAction from 'components/PageAction.vue'
 import { Account } from '@vechain/hw-app-vet'
 import * as Ledger from 'src/utils/ledger'
 import SvgLedger from 'components/SvgLedger.vue'
-import LottieVuePlayer from '@lottiefiles/vue-lottie-player'
-Vue.use(LottieVuePlayer)
 
+require("@lottiefiles/lottie-player")
 const defaultGid = genesises.main.id
 
 export default Vue.extend({
