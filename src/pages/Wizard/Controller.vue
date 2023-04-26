@@ -139,7 +139,7 @@ export default Vue.extend({
             await randomDelay(async () => {
                 const node0 = vault.derive(0)
                 await this.$svc.wallet.insert({
-                    gid: genesises.main.id,
+                    gid: genesises.test.id,
                     vault: vault.encode(),
                     meta: {
                         name: 'My Wallet',
