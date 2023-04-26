@@ -134,11 +134,12 @@ export default Vue.extend({
             const vault = await randomDelay(() => Promise.resolve(Vault.createHD(words, umk)), 0.3)
 
             // save the wallet
+            // Also change the network settings
             this.progressStr = this.$t('wizard.msg_init_animation_s5').toString()
             await randomDelay(async () => {
                 const node0 = vault.derive(0)
                 await this.$svc.wallet.insert({
-                    gid: genesises.main.id,
+                    gid: genesises.test.id,
                     vault: vault.encode(),
                     meta: {
                         name: 'My Wallet',
