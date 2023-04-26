@@ -12,7 +12,7 @@
             <q-item-label header>{{$t('send.label_to')}}</q-item-label>
             <To
                 v-model="to"
-                class="q-mxmd"
+                class="q-mxmd labelIcon"
                 :wallets="toWallets"
                 :error-message="errors.to"
                 :error="!!errors.to"
