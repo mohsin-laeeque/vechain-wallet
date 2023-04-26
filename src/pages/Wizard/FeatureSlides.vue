@@ -16,8 +16,7 @@
             class="column no-wrap q-gutter-y-md text-center"
         >
             <img
-                class="q-my-auto"
-                style="max-height:250px;min-height:32px;"
+                class="q-my-auto sliderLogo"
                 draggable="false"
                 :src="item.img"
             />

@@ -1,4 +1,4 @@
-import { RouteConfig } from 'vue-router' 
+import { RouteConfig } from 'vue-router'
 import Main from 'layouts/Main'
 import Index from 'pages/Index'
 import Address from 'pages/Address'
