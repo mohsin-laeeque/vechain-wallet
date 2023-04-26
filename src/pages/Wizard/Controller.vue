@@ -135,6 +135,7 @@ export default Vue.extend({
             const vault = await randomDelay(() => Promise.resolve(Vault.createHD(words, umk)), 0.3)
 
             // save the wallet
+            // Also change the network settings
             this.progressStr = this.$t('wizard.msg_init_animation_s5').toString()
             await randomDelay(async () => {
                 const node0 = vault.derive(0)
