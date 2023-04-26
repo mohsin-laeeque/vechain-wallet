@@ -9,7 +9,7 @@
         <q-toolbar-title class="text-center">
             <div
                 ref="title"
-                class="ellipsis"
+                class="ellipsis tra text-white"
                 :style="titleStyle"
             >{{title}}
             </div>

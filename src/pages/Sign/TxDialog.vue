@@ -7,7 +7,7 @@
         transition-hide="slide-down"
     >
         <q-card class="column no-wrap bg-grey-3">
-            <page-toolbar class="text-black"
+            <page-toolbar class="transactionText"
                 :title="$t('common.transaction')"
                 icon="close"
                 :gid="gid"
