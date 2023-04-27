@@ -26,7 +26,7 @@
                 :error-message="error"
                 no-error-icon
             />
-            <div class="col column no-wrap flex-center">
+            <div class="col column no-wrap flex-center vechainLottifile">
                 <!-- <img class="image_rotate"
                     src="~assets/vechain-logo-tint.svg"
                     style="min-height:0px;max-height:300px;max-width:100%"
@@ -35,7 +35,7 @@
             </div>
             <div
                 v-if="isSupport"
-                class="row flex-center"
+                class="row flex-center ledgerBlock"
             >
                 <svg-ledger />
                 {{$t('newWallet.label_ledger_user')}}

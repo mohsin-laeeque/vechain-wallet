@@ -219,10 +219,10 @@ module.exports = configure(function (ctx) {
         }]
       }, // only for GenerateSW
       manifest: {
-        name: 'Sync2',
+        name: 'Metamuto',
         // eslint-disable-next-line @typescript-eslint/camelcase
-        short_name: 'Sync2',
-        description: 'VeChain Sync2',
+        short_name: 'Metamuto',
+        description: 'VeChain Metamuto',
         display: 'standalone',
         orientation: 'portrait',
         // eslint-disable-next-line @typescript-eslint/camelcase
