@@ -20,7 +20,7 @@
             <q-badge
                 v-if="warn"
                 color="negative"
-                class="absolute-top-right no-pointer-events text-bold test"
+                class="absolute-top-right testBadge no-pointer-events text-bold test"
             >
                 {{warn}}
             </q-badge>
