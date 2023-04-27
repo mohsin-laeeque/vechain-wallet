@@ -58,8 +58,11 @@ body
 ::-webkit-scrollbar-thumb
   background: #041134
 
-.fit
-  padding-bottom: 50px
+.q-panel, .backupPanel
+  width: 100%
+
+.xss
+  max-width: 600px
 
 .bg-primary
   background: #0E64C3 !important
@@ -71,7 +74,7 @@ body
   width: 40%
 
 .tiny
-  font-size: 13px
+  font-size: 12px
 
 .bg-pur
   background: #4f65b4
@@ -466,7 +469,6 @@ img
 
 
 
-$layout-breakpoint-small: 1399px
 
 @media (max-width: $desktop)
   body
@@ -475,3 +477,7 @@ $layout-breakpoint-small: 1399px
   .grpBtn.narrow-page button, .q-card button, .themeBtn
     max-width: 170px;
     min-height: 50px;
+
+@media (max-width: $tab)
+  .xss
+    max-width: 600px
