@@ -293,7 +293,7 @@ module.exports = configure(function (ctx) {
 
       builder: {
         // https://www.electron.build/configuration/configuration
-        productName: 'Sync2',
+        productName: 'Metamuto',
         appId: 'org.vechain.sync2',
         artifactName: '${productName}-${os}-${arch}-${version}.${ext}',
         protocols: {

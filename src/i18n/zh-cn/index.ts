@@ -46,16 +46,16 @@ export default {
         received: '已接收'
     },
     disclaimer: {
-        msg_unstable_terms: '注意：您当前使用的是非稳定版本的Sync2，请避免使用此版本管理包含主网资产的钱包。非稳定版本可能存在严重的缺陷或包含未开发完成的功能，并可能带来数据丢失的风险。它的目的是为了让开发者和部分用户提前预览新功能，帮助发现问题，以达到持续改进。',
+        msg_unstable_terms: 'Metamuto',
         label_unstable_terms_accept: '我已知悉，愿意承担风险',
 
-        msg_disclaimer_terms: '免责声明：在正式使用Sync2之前，您应当充分理解去中心化的要义。Sync2不会在除本机之外的任何地方存储您的私钥/助记词/密码等机密信息，您有责任妥善备份上述机密信息，并将它们保存在安全的地方。对于包括但不限于私钥/助记词/密码丢失、遗忘或被窃取所产生的后果，Sync2作者及其所属公司或组织不承担任何责任。',
+        msg_disclaimer_terms: '免责声明：在正式使用Metamuto之前，您应当充分理解去中心化的要义。Metamuto不会在除本机之外的任何地方存储您的私钥/助记词/密码等机密信息，您有责任妥善备份上述机密信息，并将它们保存在安全的地方。对于包括但不限于私钥/助记词/密码丢失、遗忘或被窃取所产生的后果，Metamuto作者及其所属公司或组织不承担任何责任。',
         label_disclaimer_terms_accept: '我理解，愿意承担一切责任'
     },
     wizard: {
         title_welcome: '欢迎',
         title_init: '稍等片刻',
-        title_feature_1: 'VeChain Sync2',
+        title_feature_1: 'VeChain Metamuto',
         title_feature_2: '资产管理',
         title_feature_3: '与DApp交互',
         msg_feature_1: '最新的 Sync 提供钱包管理和应用交互',

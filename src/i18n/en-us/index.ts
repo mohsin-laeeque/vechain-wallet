@@ -49,13 +49,13 @@ export default {
         msg_unstable_terms: 'Note: You are currently using the unstable version of Metamuto. Please avoid using this version to manage any real assets on the mainnet. Unstable version could contain severe bugs and hidden features that may result in serious data loss. The purpose of this version is to allow developers and some users to preview upcoming features and provide feedback for further improvement and development.',
         label_unstable_terms_accept: 'I understand and accept to take the risk',
 
-        msg_disclaimer_terms: 'Disclaimer: Before you start using Metamuto, you should fully understand the essence of decentralization. Metamuto will not store your private key/mnemonic words/password or other confidential information anywhere except on this device. You are solely responsible for properly backing up the above-mentioned confidential information and keeping it in a secure place. Sync2 developers and their affiliated companies or organizations will not be held liable for any consequences, including but not limited to the loss, forgotten, or stolen of private keys/mnemonic words/passwords.',
+        msg_disclaimer_terms: 'Disclaimer: Before you start using Metamuto, you should fully understand the essence of decentralization. Metamuto will not store your private key/mnemonic words/password or other confidential information anywhere except on this device. You are solely responsible for properly backing up the above-mentioned confidential information and keeping it in a secure place. Metamuto developers and their affiliated companies or organizations will not be held liable for any consequences, including but not limited to the loss, forgotten, or stolen of private keys/mnemonic words/passwords.',
         label_disclaimer_terms_accept: 'I understand and accept all responsibilities'
     },
     wizard: {
         title_welcome: 'Welcome',
         title_init: 'One Moment',
-        title_feature_1: 'VeChain Sync2',
+        title_feature_1: 'VeChain Metamuto',
         title_feature_2: 'Asset Management',
         title_feature_3: 'DApps Interaction',
         msg_feature_1: 'The latest Sync provides access to wallets and interactions with dApps.',
