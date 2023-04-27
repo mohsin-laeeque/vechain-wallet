@@ -9,7 +9,7 @@
                 <img src="../../assets/favicon.png">
             </q-avatar>
             <q-toolbar-title>
-                Sync2
+                Metamuto
                 <q-badge
                     v-if="distTag"
                     outline
