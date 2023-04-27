@@ -45,7 +45,7 @@
                     <q-badge
                         v-if="networkBadgeText"
                         color="negative"
-                        class="no-pointer-events text-bold"
+                        class="no-pointer-events text-bold testBadge"
                     >
                         {{networkBadgeText}}
                     </q-badge>

@@ -12,7 +12,7 @@
                 />
                 <q-spinner-dots
                     v-else
-                    color="primary"
+                    color="primary circleLoader "
                 />
                 <q-avatar size="1em">
                     <img src="~assets/vtho.svg">

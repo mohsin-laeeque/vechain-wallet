@@ -10,7 +10,7 @@
             >
 
             <!-- favicon -->
-            <div class="relative-position favicon-frame q-mx-auto">
+            <div class="relative-position favicon-frame signPage q-mx-auto">
                 <transition
                     mode="out-in"
                     name="q-transition--fade"
@@ -26,7 +26,7 @@
                     >{{(host[0]|| '?').toUpperCase()}}</div>
                 </transition>
             </div>
-            <p />
+            <!-- <p /> -->
             <p class="text-subtitle1">{{$t('sign.msg_request_signature')}}</p>
         </div>
         <!-- descriptions -->
