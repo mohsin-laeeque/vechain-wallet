@@ -12,7 +12,7 @@
         />
         <div> {{level && level.label}} </div>
         <template v-slot:loading>
-            <q-spinner-dots color="primary" />
+            <q-spinner-dots color="primary circleLoader " />
         </template>
         <q-popup-proxy
             v-if="calcFee"

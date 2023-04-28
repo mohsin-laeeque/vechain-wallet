@@ -27,7 +27,7 @@
         <template v-slot:loading>
             <div class="text-center q-my-sm">
                 <q-spinner-dots
-                    color="primary"
+                    color="primary circleLoader "
                     size="20px"
                 />
             </div>
