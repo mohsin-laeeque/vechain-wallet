@@ -2,7 +2,7 @@
     <div class="column fit">
         <page-toolbar :title="$t('settings.title')" />
         <page-content class="col">
-            <q-list padding>
+            <q-list padding class="settingsList">
                 <language-list-popup
                     v-slot="{displayName}"
                     anchor="bottom right"

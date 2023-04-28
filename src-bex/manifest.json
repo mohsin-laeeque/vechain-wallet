@@ -1,6 +1,6 @@
 {
-  "name": "motopad wallet",
-  "description": "A motopad browser based walled extension",
+  "name": "MetaMuto",
+  "description": "A Metamuto browser based walled for mutopad",
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
@@ -9,7 +9,8 @@
     "128": "icons/icon-128x128.png"
   },
   "browser_action": {
-    "default_title": "quasar-browser-extension"
+    "default_title": "Meta-Muto",
+    "default_popup": "www/index.html"
   },
   "background": {
     "scripts": [
@@ -29,10 +30,13 @@
     ]
   }],
   "permissions": [
-    "<all_urls>",
     "storage",
-    "tabs",
-    "activeTab"
+    "unlimitedStorage",
+    "clipboardWrite",
+    "activeTab",
+    "webRequest",
+    "notifications",
+    "webRequestBlocking"
   ],
   "web_accessible_resources": [
     "www/*",
@@ -40,5 +44,5 @@
     "css/*",
     "<all_urls>"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+  "content_security_policy": "frame-ancestors 'none'; script-src 'self' 'unsafe-eval'; object-src 'self';"
 }

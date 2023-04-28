@@ -1,7 +1,7 @@
 <template>
     <q-carousel
         v-model="slide"
-        class="safe-area"
+        class="safe-area homeBg"
         transition-prev="slide-down"
         transition-next="slide-up"
         animated
@@ -16,21 +16,20 @@
                 innerClass="fit column"
             >
                 <div class="row">
-                    <h4 class="q-ma-none">{{$t('wizard.title_welcome')}}</h4>
+                    <!-- <h4 class="q-ma-none divCenter">{{$t('wizard.title_welcome')}}</h4> -->
                     <language-list-popup
                         class="q-ml-auto"
                         v-slot="{displayName}"
                     >
-                        <q-btn
+                        <q-btn class="langBtn"
                             flat
                             icon="language"
                             size="sm"
-                            color="primary"
                             :label="displayName"
                         />
                     </language-list-popup>
                 </div>
-                <feature-slides class="col q-mt-md" />
+                <feature-slides class="col q-mt-md homeLogo" />
             </page-content>
             <page-action>
                 <q-btn
@@ -50,7 +49,7 @@
                 padding
                 innerClass="fit column q-gutter-y-md no-wrap"
             >
-                <h4 class="q-mb-none">{{$t('wizard.title_init')}}</h4>
+                <h4 class="q-mb-none mainTitle">{{$t('wizard.title_init')}}</h4>
                 <Progress
                     :current="progressStr"
                     class="col overflow-auto"
@@ -135,11 +134,12 @@ export default Vue.extend({
             const vault = await randomDelay(() => Promise.resolve(Vault.createHD(words, umk)), 0.3)
 
             // save the wallet
+            // Also change the network settings
             this.progressStr = this.$t('wizard.msg_init_animation_s5').toString()
             await randomDelay(async () => {
                 const node0 = vault.derive(0)
                 await this.$svc.wallet.insert({
-                    gid: genesises.main.id,
+                    gid: genesises.test.id,
                     vault: vault.encode(),
                     meta: {
                         name: 'My Wallet',

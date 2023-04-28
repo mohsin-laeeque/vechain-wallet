@@ -2,7 +2,7 @@
     <div class="column fit">
         <page-toolbar :title="$t('settings.action_token_list')" />
         <page-content class="col">
-            <q-list
+            <q-list class="assetsList"
                 v-if="tokens.length>0"
                 padding
             >
@@ -39,7 +39,7 @@
             >
                 <q-spinner-dots
                     v-if="$asyncComputed.tokens.updating"
-                    class="text-h2"
+                    class="text-h2 circleLoader "
                 />
                 <template v-else>
                     <p>{{$t('common.something_wrong')}}</p>

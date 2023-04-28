@@ -12,14 +12,14 @@
             <q-item-label header>{{$t('send.label_to')}}</q-item-label>
             <To
                 v-model="to"
-                class="q-mx-md"
+                class="q-mxmd labelIcon"
                 :wallets="toWallets"
                 :error-message="errors.to"
                 :error="!!errors.to"
                 @change="errors.to = ''"
             />
             <q-item-label header>{{$t('send.label_asset')}}</q-item-label>
-            <TokenSelector
+            <TokenSelector class="sendAssetsInput"
                 :tokens="tokenList"
                 v-model="sym"
                 :address="address"
@@ -28,7 +28,7 @@
             <q-input
                 no-error-icon
                 autocomplete="off"
-                class="q-mx-md"
+                class="q-mxmd"
                 v-model="amount"
                 :error-message="errors.amount"
                 :error="!!errors.amount"

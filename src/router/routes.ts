@@ -12,7 +12,6 @@ import NodesSetting from 'pages/NodesSetting'
 import Sign from 'pages/Sign'
 import SignSuccess from 'pages/SignSuccess.vue'
 import Activities from 'pages/Activities'
-
 const routes: RouteConfig[] = [
     {
         path: '/',

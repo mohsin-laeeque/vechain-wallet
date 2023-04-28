@@ -1,11 +1,11 @@
 <template>
     <div
         v-scrollDivider.both
-        class="overflow-auto"
+        class="overflow-auto tabStyle"
         :class="{'q-pa-md': padding}"
     >
         <div
-            class="q-mx-auto"
+            class="q-mx-auto assetsHis"
             :class="innerClass"
             :style="innerStyle"
         >

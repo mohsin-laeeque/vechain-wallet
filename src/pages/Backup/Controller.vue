@@ -2,7 +2,7 @@
     <div class="column fit">
         <page-toolbar :title="$t('backup.title')" />
         <q-tab-panels
-            class="col"
+            class="col backupPanel"
             animated
             v-model="panel"
             transition-next="jump-up"

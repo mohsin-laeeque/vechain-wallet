@@ -1,5 +1,5 @@
 <template>
-    <q-item>
+    <q-item class="estFee">
         <q-item-section avatar>
             <q-item-label caption>{{$t('sign.label_estimate_fee')}}</q-item-label>
         </q-item-section>
@@ -12,7 +12,7 @@
                 />
                 <q-spinner-dots
                     v-else
-                    color="primary"
+                    color="primary circleLoader "
                 />
                 <q-avatar size="1em">
                     <img src="~assets/vtho.svg">

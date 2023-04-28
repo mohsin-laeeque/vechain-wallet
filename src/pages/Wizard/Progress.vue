@@ -6,7 +6,7 @@
     >
         <div
             v-for="(_, i) in history"
-            class="text-h5 text-center"
+            class="text-h6 text-center"
             :class="getClass(i)"
             :key="i+''"
         >
@@ -32,7 +32,7 @@ export default Vue.extend({
     },
     methods: {
         getClass(i: number) {
-            return i + 1 === this.history.length ? 'text-dark' : 'text-grey'
+            return i + 1 === this.history.length ? 'text-clip' : 'text-white'
         }
     }
 })

@@ -1,5 +1,5 @@
 <template>
-    <q-list>
+    <q-list class="www">
         <q-item class="justify-center">
             <q-item-section>
                 <img src="~/assets/backup.svg">

@@ -1,11 +1,11 @@
 <template>
-    <q-expansion-item
+    <q-expansion-item class="activityTab"
         group="item"
         expand-icon-class="hidden"
     >
-        <template v-slot:header>
-            <q-item-section>
-                <q-item-label>{{ title }}</q-item-label>
+        <template v-slot:header class="www">
+            <q-item-section class="transactionBox">
+                <q-item-label class="activityLabel">{{ title }}</q-item-label>
                 <q-item-label
                     caption
                     lines="1"
@@ -37,7 +37,7 @@
                         :label="$t('activities.label_reverted')"
                     />
                     <span
-                        class="text-red"
+                        class="text-red tiny"
                         v-if="entry.status === 'expired'"
                     > {{$t('activities.label_expired')}} </span>
                 </q-item-label>
@@ -45,7 +45,7 @@
                     <q-badge
                         v-if="networkBadgeText"
                         color="negative"
-                        class="no-pointer-events text-bold"
+                        class="no-pointer-events text-bold testBadge"
                     >
                         {{networkBadgeText}}
                     </q-badge>
@@ -68,7 +68,7 @@
                     </q-item-label>
                 </q-item-section>
             </q-item>
-            <q-item v-if="entry.comment">
+            <q-item v-if="entry.comment" class="grey_badge">
                 <q-item-section>
                     <q-item-label class="text-body2">
                         {{entry.comment}}
