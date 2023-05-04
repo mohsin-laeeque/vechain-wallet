@@ -82,7 +82,7 @@ import { Account } from '@vechain/hw-app-vet'
 import * as Ledger from 'src/utils/ledger'
 import SvgLedger from 'components/SvgLedger.vue'
 
-require("@lottiefiles/lottie-player")
+require('@lottiefiles/lottie-player')
 const defaultGid = genesises.main.id
 
 export default Vue.extend({

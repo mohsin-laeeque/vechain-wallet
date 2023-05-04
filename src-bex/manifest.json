@@ -1,6 +1,6 @@
 {
   "name": "MetaMuto",
-  "description": "A Metamuto browser based walled for mutopad",
+  "description": "A MetaMuto browser based walled for mutopad",
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
