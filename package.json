@@ -10,7 +10,9 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
-    "install": "electron-rebuild"
+    "install": "electron-rebuild",
+    "build": "quasar build -m bex",
+    "v3": "node copy.js"
   },
   "dependencies": {
     "@lottiefiles/lottie-player": "^1.7.1",
@@ -58,6 +60,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.1.2",
     "file-loader": "^6.2.0",
+    "fs-extra": "^11.1.1",
     "more-entropy": "0.0.7",
     "qr-scanner": "^1.2.0",
     "qrcode-svg": "^1.1.0",

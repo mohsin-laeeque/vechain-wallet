@@ -19,6 +19,7 @@ node_modules
 # BEX related directories and files
 /src-bex/www
 /src-bex/js/core
+/v3/www
 
 # Log files
 npm-debug.log*
